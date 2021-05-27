@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Form, Button} from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { addIncome } from '../actions/TaxActions'
-import DisplayTotal from './DisplayTotal';
+import DisplayTaxes from './DisplayTaxes';
 
 
 class TaxCalculator extends React.Component {
@@ -37,7 +37,7 @@ class TaxCalculator extends React.Component {
                     </Button>
                 </Form>
     
-                <DisplayTotal/>
+                <DisplayTaxes/>
     
             </div>
         )
