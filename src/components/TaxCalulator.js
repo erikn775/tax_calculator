@@ -2,12 +2,14 @@ import React, {useState, useEffect} from 'react';
 import {Form, Button} from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { addIncome } from '../actions/TaxActions'
+import DisplayTotal from './DisplayTotal';
 
 
 class TaxCalculator extends React.Component {
 
     state = {
-        income: 0
+        income: 0,
+        tax: 0
     }
     
     handleSubmit = (event) => {
@@ -35,10 +37,7 @@ class TaxCalculator extends React.Component {
                     </Button>
                 </Form>
     
-                <div>
-                    <h3>Net Income:</h3>
-                    {this.state.income}
-                </div>
+                <DisplayTotal/>
     
             </div>
         )

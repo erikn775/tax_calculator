@@ -15,7 +15,7 @@ export default function TaxReducer(state = {totalTaxes: 0}, action){
         case "Bracket12":
             state.totalTaxes += (Math.min(action.payload, 40126) - 9876) * .12;
     }
-    console.log(state)
+    return state
 }
 
     
