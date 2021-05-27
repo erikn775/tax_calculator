@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import { TaxReducer } from './reducers/TaxReducer'
+import { TaxReducer } from './reducers/TaxReducer.js'
 
 const store = createStore(TaxReducer)
 

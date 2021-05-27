@@ -1,6 +1,6 @@
 
-
-switch (action.type)
+export default function TaxReducer(state = {income: 0, totalTaxes: 0}, action){
+    switch (action.type)
     {
         case "Bracket37":
             totalTaxes += (income - 518401) * .37;
@@ -15,4 +15,6 @@ switch (action.type)
         case "Bracket12":
             totalTaxes += (Math.min(income, 40126) - 9876) * .12;
     }
+}
+
     

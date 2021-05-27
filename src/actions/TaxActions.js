@@ -1,5 +1,4 @@
 
-
 export const addIncome = (income) => {
     if(income <= 9875)
         return {type: "Bracket0", payload: income}

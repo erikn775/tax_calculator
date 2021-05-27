@@ -8,10 +8,14 @@ export default function TaxCalculator() {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        if (income > 12000){
-            setNetIncome(1000);
-        }
     }
+
+    const counter = useSelector(state => {
+        console.log(state)
+        
+    });
+    
+    const dispatch = useDispatch();
 
     const handleChange = (event) => {
         setIncome(event.target.value)
