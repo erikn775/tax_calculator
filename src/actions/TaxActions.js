@@ -1,5 +1,6 @@
 
-export const addIncome = (income) => {
+export const addIncome = (grossIncome) => {
+    let income = Number(grossIncome)
     if(income <= 9875)
         return {type: "Bracket0", payload: income}
     if(income > 9875 && income <= 40125)
@@ -12,6 +13,6 @@ export const addIncome = (income) => {
         return {type: "Bracket32", payload: income}
     if(income > 207350 && income <= 518400)
         return {type: "Bracket35", payload: income}
-    if(income < 518400)
+    if(income > 518400)
         return {type: "Bracket37", payload: income}
 }

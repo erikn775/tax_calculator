@@ -11,8 +11,9 @@ class TaxCalculator extends React.Component {
     }
     
     handleSubmit = (event) => {
-        let income = this.state.income
-        this.props.addIncome(income)
+        event.preventDefault();
+        let income = this.state.income;
+        this.props.addIncome(income);
     }
 
     handleChange = (event) => {
