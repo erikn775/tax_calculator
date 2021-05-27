@@ -1,10 +1,21 @@
 .App {
   text-align: center;
+  background-image: url(https://st2.depositphotos.com/1000152/7092/i/950/depositphotos_70926691-stock-photo-green-forest-background.jpg);
+  height: 100vh;
+  box-shadow:inset 0 0 0 2000px rgba(184, 184, 184, 0.9);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.taxModal {
+  padding-top: 50px;
+  background-color: whitesmoke;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {

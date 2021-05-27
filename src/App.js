@@ -5,8 +5,10 @@ import TaxCalculator from './components/TaxCalulator';
 function App() {
   return (
     <div className="App">
-      <h1>Income Tax Calculator</h1>
-      <TaxCalculator/>
+      <div className="taxModal">
+        <h1>Income Tax Calculator</h1>
+        <TaxCalculator/>
+      </div>
     </div>
   );
 }
